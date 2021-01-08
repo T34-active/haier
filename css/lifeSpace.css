@@ -1,0 +1,285 @@
+/* 默认公共样式 */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+    zoom: 1;
+}
+
+.w {
+    box-sizing: border-box;
+    width: 1360px;
+    margin: 0 auto;
+}
+
+.ww {
+    box-sizing: border-box;
+    width: 1230px;
+    margin: 0 auto;
+}
+
+.min_w {
+    width: 1520px;
+}
+
+
+/* 五大生活空间 */
+
+.five_life .wrap>div {
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+    height: 764px;
+}
+
+.five_life .five_content {
+    width: 65%;
+    overflow: hidden;
+    position: relative;
+}
+
+.five_content h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 100px;
+    margin-left: 50px;
+    font-size: 40px;
+}
+
+.five_content .lunbo {
+    width: 700%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    margin-left: -100%;
+    transition: left 1s;
+}
+
+.five_content .lunbo li {
+    list-style: none;
+    float: left;
+    width: 14.28%;
+    height: 100%;
+    background: url(../images/five_life/five_one0_img.webp) no-repeat center;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.five_content .lunbo li.living {
+    background-image: url(../images/five_life/five_one0_img.webp);
+}
+
+.five_content .lunbo li.bedroom {
+    background-image: url(../images/five_life/five_two0_img.webp);
+}
+
+.five_content .lunbo li.kitchen {
+    background-image: url(../images/five_life/five_three0_img.webp);
+}
+
+.five_content .lunbo li.bathroom {
+    background-image: url(../images/five_life/five_four0_img.webp);
+}
+
+.five_content .lunbo li.veranda {
+    background-image: url(../images/five_life/five_five0_img.webp);
+}
+
+.five_content .lunbo .opacity {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    background-color: rgb(173, 170, 162);
+    opacity: .5;
+}
+
+.five_content .lunbo .details {
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    color: white;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.five_content .lunbo .details h3 {
+    position: relative;
+    z-index: 200;
+    font-size: 24px;
+}
+
+.five_content .lunbo .details .explain {
+    width: 95%;
+    margin-top: 10px;
+}
+
+.five_content .lunbo .details .look {
+    float: right;
+    width: 170px;
+    height: 60px;
+    border: 1px solid white;
+    color: white;
+    line-height: 60px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 50px;
+    position: relative;
+}
+
+.five_content .lunbo .details .look a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.five_content .lunbo .details .look:hover {
+    background-color: white;
+    border-color: white;
+    color: rgb(102, 102, 102);
+}
+
+.five_content .lunbo .details a img {
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+}
+
+
+/* 轮播顺序 */
+
+.five_content .bar {
+    width: 290px;
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.five_content .bar li {
+    list-style: none;
+    float: left;
+    width: 50px;
+    height: 4px;
+    background-color: rgb(198, 202, 203);
+    margin-right: 8px;
+    position: relative;
+}
+
+.five_content .bar li.cur::after {
+    animation: lineColor 0.8s;
+    -webkit-animation: lineColor 0.8s;
+    display: inline-block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #34bcfc;
+    position: absolute;
+    left: 0;
+}
+
+@keyframes lineColor {
+    0% {
+        width: 0%;
+    }
+    20% {
+        width: 15%;
+    }
+    40% {
+        width: 35%;
+    }
+    60% {
+        width: 55%;
+    }
+    80% {
+        width: 75%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/* 线下体验 */
+
+.five_life .line_xia {
+    width: 35%;
+    background: url(../images/five_life/line_xia0.webp) no-repeat 0 0;
+    padding-top: 20px;
+}
+
+.line_xia .line_content {
+    box-sizing: border-box;
+    width: 80%;
+    height: 95%;
+    border: 1px solid white;
+    padding: 200px 20px 0;
+    margin-left: 20px;
+}
+
+.line_xia .line_content:hover {
+    box-shadow: 0 20px 50px #d0d0d0;
+    transition: all .8s;
+}
+
+.line_xia .line_content p {
+    width: 220px;
+    height: 60px;
+    border: 1px solid white;
+    line-height: 60px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    margin: 100px auto 0;
+}
+
+.line_xia .line_content p a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.line_xia .line_content p i {
+    display: inline-block;
+    width: 28px;
+    height: 32px;
+    background: url(../images/five_life/line_xia2_img.webp) no-repeat 0 0;
+    margin-right: 5px;
+    position: relative;
+    top: 10px;
+}
+
+.line_xia .line_content p:hover {
+    background-color: white;
+    color: rgb(102, 102, 102);
+}
+
+.line_xia .line_content p:hover i {
+    background-image: url(../images/five_life/line_xia2_img_hover.webp);
+}

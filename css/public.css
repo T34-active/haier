@@ -1,0 +1,175 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/* 图库样式 */
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.wrap{
+	margin: 0 auto;
+	min-width: 1300px;
+	width: 1300px;
+}
+.fr{
+	float: right;
+}
+.fl{
+	float: left;
+}
+i{
+	font-style: normal;
+}
+a{
+	text-decoration: none;
+	color: #000;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	font-size: 15px;
+}
+/* 头部 */
+.header{
+	background-color: aquamarine;
+	height: 70px;
+}
+.header-left>li{
+	float: left;
+	list-style: none;
+	line-height: 70px;
+	margin-right: 50px;
+}
+.header-left>li>a:hover{
+	color: #0c5ca8;
+}
+.header-left .logo{
+	width: 180px;
+	height: 70px;
+}
+.header-left .logo>a:before{
+	content: "";
+	display: inline-block;
+	width: 90%;
+	height: 100%;
+	margin-top: 20px;
+	background: url(../images/haier2020_logo.png) no-repeat 0px -18px;
+	background-size: 65%;
+}
+.header-right>li{
+	float: left;
+	list-style: none;
+	line-height: 70px;
+	margin-right: 5px;
+}
+.header-right .search{
+	height: 30px;
+	padding-left: 7px;
+}
+.header-right .search-form{
+	position: relative;
+}
+.header-right .icon-search{
+	position: absolute;
+	right: 0;
+	bottom: 19px;
+	background-color: antiquewhite;
+	height: 30px;
+	width: 30px;
+}
+/* 底部	 */
+.footer{
+	background-color: blanchedalmond;
+	height: 450px;
+}
+.footer-up{
+	width: 100%;
+	overflow: hidden;
+}
+.footer .famliy{
+	width: 16.6%;
+	background-color: yellowgreen;
+}
+.footer .famliy .list>li{
+	height: 30px;
+	list-style: none;
+}
+.footer .famliy .list>li:first-of-type{
+	margin-top: 15px;
+}
+.footer .famliy .list>li>a{
+	font-size: 13px;
+	font-weight: 100;
+}
+.footer-down{
+	border-top: 1px solid rgb(200 200 200);
+	overflow: hidden;
+	margin-top: 20px;
+}
+.footer-down-left{
+	margin-top: 10px;
+	margin-right: 70px;
+}
+.footer-down-left>a{
+	font-size: 12px;
+	color: rgb(68 68 68);
+	display: inline-block;
+	font-weight: 400;
+	vertical-align: middle;
+}
+.footer-down-left>a:hover{
+	color: rgb(12 92 168);
+}
+.footer-down-left>i{
+	padding: 0 10px;
+	vertical-align: middle;
+}
+.footer-down-mid{
+	margin-top: 10px;
+	vertical-align: middle;
+}
+.footer-down-mid>span>a{
+	font-size: 12px;
+	color: rgb(68 68 68);
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: 400;
+}
+.footer-down-mid>i{
+	padding: 0 10px;
+	vertical-align: middle;
+}
+.footer-down-mid>span{
+	vertical-align: middle;
+	font-size: 12px;
+}
+.footer-down-right{
+	margin-top: 10px;
+	vertical-align: middle;
+}
+.footer-down-right .gz{
+	margin-left: 5px;
+	font-size: 12px;
+}
+.footer-down-right .web{
+	font-size: 12px;
+}
+.footer-down-right .web>a{
+	font-size: 12px;
+	font-weight: 400;
+	color: rgb(12 92 168);
+}
+.footer-down-right .icon-wechat{
+	margin-left: 5px;
+}
+.footer-down-right .first{
+	width: 30px;
+	height: 30px;
+}
+.footer-down-right .second{
+	width: 30px;
+	height: 30px;
+	display: none;
+}

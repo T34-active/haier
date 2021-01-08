@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>账号登录|海尔官网|你的生活智慧，我的智慧生活</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/online.css" type="text/css" />
+</head>
+<body>
+    <!-- 头部 -->
+    <header class="min_w">
+        <nav class="w clearfix">
+            <ul class="h_left">
+                <li class="logo">
+                    <a href="index.html"></a>
+                </li>
+                <li>账号登录</li>
+            </ul>
+            <ul class="h_right">
+                <li><a href="register.html" class="blue">注册海尔账号</a></li>
+                <li>|</li>
+                <li><a href="javascript:;" class="hover_blue">梦享<span>+</span>会员首次激活登录</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article class="min_w">
+        <section class="login w clearfix">
+            <div class="opacity"></div>
+            <div class="login_content">
+                <form id="myform" action="go.html" method="get">
+                    <h3>登录海尔账号</h3>
+                    <!-- js变化，手机登录海尔账号、二维码登录海尔账号 -->
+                    <ul class="top_nav clearfix">
+                        <li class="ease"><i></i>普通登录</li>
+                        <li class="phone"><i></i>使用手机<br/>动态密码登录</li>
+                        <li class="code"><i></i></li>
+                    </ul>
+                    <ul class="top_content">
+                        <!-- 普通登录栏 -->
+                        <li class="general">
+                            <p class="uname"><i></i><input type="text" autocomplete="off" placeholder="手机号 / 验证邮箱 / 用户名" name="ease_uname" id="ease_uname" /></p>
+                            <p class="pwd"><i></i><input type="password" autocomplete="off" placeholder="登录密码" name="ease_pwd" id="ease_pwd" /><em><b>忘记密码</b></em></p>
+                            <div class="scroll" style="display: none;">
+                                请按住滑块，拖到最右边
+                                <p class="on">
+                                    <i></i>
+                                </p>
+                            </div>
+                            <p class="agree"><i></i>我同意<a href="javascript:;">《海尔注册用户服务条款》</a><a href="javascript:;">《法律声明及隐私权政策》</a></p>
+                            <p class="noLogin"><i></i>两周内免登录</p>
+                            <p class="btn"><input type="submit" value="登录" id="ease_btn" /></p>
+                        </li>
+                        <!-- 手机动态码登录栏 -->
+                        <li class="phone">
+                            <p class="uname"><i></i><input type="text" placeholder="手机号" name="phone_uname" id="phone_uname" maxlength="11" autocomplete="off" /></p>
+                            <div class="scroll">
+                                请按住滑块，拖到最右边
+                                <p class="on">
+                                    <span>请按住滑块，拖到最右边</span>
+                                    <i></i>
+                                </p>
+                                <div class="imgword">
+                                    <em></em>
+                                    <div>
+                                        <img src="images/imgword0.png" alt="" />
+                                        <div class="click"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="send"><button type="button">发送动态密码到手机</button></p>
+                            <p class="msg"><i></i><input type="text" name="phone_pwd" id="phone_pwd" placeholder="短信验证码" autocomplete="off" /></p>
+                            <p class="agree"><i></i>我同意<a href="javascript:;">《海尔注册用户服务条款》</a><a href="javascript:;">《法律声明及隐私权政策》</a></p>
+                            <p class="btn"><input type="submit" value="登录" id="phone_btn" /></p>
+                        </li>
+                        <!-- 二维码栏 -->
+                        <li class="qrCode clearfix">
+                            <div class="code">
+                                <img src="images/code.jpg" alt="" />
+                            </div>
+                            <div class="tip">
+                                <p>手机APP扫码</p>
+                                <p>安全登录</p>
+                                <p class="refresh"><a href="javascript:;"><i></i>刷新二维码</a></p>
+                                <p class="download"><a href="javascript:;"><i></i>下载海尔APP</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+                <div class="bottom">
+                    <a href="javascript:;">微信</a>
+                    <a href="javascript:;">微博</a>
+                    <a href="javascript:;">网易</a>
+                    <a href="javascript:;">人人网</a>
+                    <a href="javascript:;">开心网</a>
+                </div>
+                <!-- 提示 -->
+                <div class="text"><i></i><em></em><span></span></div>
+            </div>
+        </section>
+    </article>
+    <footer class="min_w">
+        <div class="w clearfix">
+            <div class="f_left">
+                <a href="javascript:;">关于海尔</a>
+                <a>|</a>
+                <a href="javascript:;">联系我们</a>
+                <a>|</a>
+                <a href="javascript:;">法律声明</a>
+                <a>|</a>
+                <a href="javascript:;">帮助中心</a>
+                <a>|</a>
+                <a href="javascript:;">海尔门店</a>
+            </div>
+            <div class="f_right">
+                <a>鲁ICP备09096283  |  © 2000-2020 Haier.com. All rights reserved.</a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/jquery3.5.1.js"></script>
+<script src="js/online.js"></script>
+</html>

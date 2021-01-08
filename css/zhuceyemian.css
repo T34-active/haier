@@ -1,0 +1,491 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "微软雅黑";
+}
+.fr {
+	float: right;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* 顶部 */
+.top {
+	width: 1200px;
+	height: 60px;
+	margin: 0 auto;
+	line-height: 60px;
+	font-size: 15px;
+}
+
+.top .aimg {
+	background: url(../images/login_icon_1010.gif) no-repeat -39px -61px;
+	display: inline-block;
+	width: 71px;
+	height: 21px;
+	vertical-align: text-bottom;
+}
+
+.top div span {
+	margin-left: 20px;
+}
+
+.top>p>a {
+	color: #32beff;
+	font-size: 15px;
+}
+
+/* 中间部分 */
+article {
+	width: 100%;
+	background: url(../images/vipuser_zhuce_bg3.jpg) no-repeat;
+}
+
+.mianbox {
+	width: 1200px;
+	margin: 0 auto;
+}
+li{
+	list-style: none;
+	margin-top: 15px;
+}
+.mianbox .miantitle {
+	height: 150px;
+	line-height: 150px;
+	text-align: center;
+	font-size: 35px;
+}
+
+/* 表单 */
+.miantable {
+	font-size: 15px;
+	color: #999;
+	width: 880px;
+	margin: 0 auto;
+	background: #fff;
+	position: relative;
+}
+
+.miantable>form>div {
+	margin-top: 15px;
+}
+
+/* 手机号码 */
+.miantable>form>ul .onep {
+	padding-top: 50px;
+	margin-left: 150px;
+}
+
+.max-input {
+	font-size: 15px;
+	width: 344px;
+	height: 32px;
+	line-height: 32px;
+	outline: 0;
+	margin: 0 10px;
+	padding: 3px 3px 3px 11px;
+}
+
+.yindao {
+	position: relative;
+	display: inline;
+}
+
+.yindao>span {
+	color: #32beff;
+	cursor: pointer;
+}
+
+.tishi {
+	margin-left: 235px;
+	color: red;
+	font-size: 15px;
+}
+
+.tishi span {
+	margin-right: 10px;
+	/* font-size: 33px; */
+	/* vertical-align: middle; */
+}
+
+/* 邮箱 */
+.youxiangp {
+	margin-left: 185px;
+	padding-top: 50px;
+}
+
+/* 密码 */
+.miantable>form>ul .twop {
+	margin-left: 180px;
+	position: relative;
+}
+.showpwd{
+	position: absolute;
+	right: 100px;
+	top: 12px;
+	display: none;
+}
+.showpwd>span{
+	color: #fff;
+	padding: 5px;
+	background-color: #c6cacb;
+}
+.showpwd>i{
+	color: #32beff;
+	font-style: normal;
+}
+.pwdbox {
+	width: 50px;
+	height: 24px;
+	border-radius: 13px;
+	/* background: #005aab; */
+	background: lightgray;
+	line-height: 24px;
+	text-align: center;
+	color: #fff;
+	margin-top: -33px;
+	position: relative;
+	margin-right: 300px;
+	font-size: 10px;
+	cursor: pointer;
+}
+.mimashow{
+	position: absolute;
+	border: 1px solid #c6cacb;
+	width: 250px;
+	z-index: 10;
+	background-color: #efefef;
+	color: black;
+	right: 100px;
+	top: 38px;
+	display: none;
+}
+.mimashow>ul{
+	margin-left: 30px;
+}
+.mimashow>p{
+	margin-left: 15px;
+	margin: 10px 10px;
+}
+.mimashow>p:last-of-type{
+	margin-top: -10px;
+}
+.pwdbox>i:first-of-type {
+	position: absolute;
+	left: 3px;
+	top: -2px;
+	cursor: pointer;
+}
+
+.pwdbox>i:last-of-type {
+	position: absolute;
+	left: 29px;
+	top: 0px;
+}
+
+.pwdbox>span {
+	content: "";
+	display: block;
+	width: 28px;
+	height: 28px;
+	border-radius: 14px;
+	position: absolute;
+	background: #fff;
+	border: 1px solid #e9e9e9;
+	margin-top: -28px;
+	/* margin-left: 25px; */
+	top: 25px;
+}
+.mima-anquan{
+	cursor: pointer;
+}
+/* 小三角 */
+.sanjiao{
+	    position: absolute;
+	    top: -11px;
+	    right: 37px;
+	    display: block;
+	    height: 0;
+	    width: 0;
+	    font-size: 0;
+	    line-height: 0;
+	    border-color: transparent transparent #c6cacb transparent;
+	    border-style: dashed dashed solid dashed;
+	    border-width: 5px;
+}
+.sanjiao>i{
+	    position: absolute;
+	    top: -4px;
+	    left: -5px;
+	    display: block;
+	    height: 0;
+	    width: 0;
+	    font-size: 0;
+	    line-height: 0;
+	    border-color: transparent transparent #efefef transparent;
+	    border-style: dashed dashed solid dashed;
+	    border-width: 5px;
+}
+/* 验证 */
+.yanzhengbox {
+	margin-left: 185px;
+	margin-top: 10px;
+	height: 38px;
+}
+
+.yanzheng {
+	font-size: 15px;
+	width: 358px;
+	height: 38px;
+	line-height: 32px;
+	margin-right: 295px;
+	border: 1px solid gray;
+	background-color: #e9e9e9;
+	/* text-align: center; */
+	position: relative;
+	user-select: none;
+}
+
+.yanzhengbox>span {
+	height: 38px;
+	line-height: 38px;
+}
+
+.huakuai {
+	width: 35px;
+	height: 38px;
+	position: relative;
+	background-color: #01BE00;
+	overflow: hidden;
+	z-index: 4;
+}
+
+.yanzheng-ok{
+	width: 325px;
+	height: 38px;
+	position: absolute;
+	top: 0;
+	left: -1px;
+	background-color: #01BE00;
+	color: #fff;
+	text-align: center;
+	z-index: 10;
+	display: none; 
+}
+.yanzheng>p {
+	position: absolute;
+	left: 90px;
+	top: 2px;
+	z-index:0;
+}
+
+.huakuai .span1 {
+	width: 35px;
+	height: 38px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: url(../images/login_icon_1010.gif) no-repeat -73px -152px;
+	background-color: #fff;
+	border-right: 1px solid dimgray;
+	cursor: move;
+	z-index: 5;
+}
+
+.huakuai .span2 {
+	color: #fff;
+	z-index: 100;
+	position: absolute;
+	left: 90px;
+	top: 2px;
+}
+
+.huakuai .span3 {
+	color: #fff;
+	position: absolute;
+	left: 10px;
+	top: 2px;
+	display: none;
+}
+
+.yanzhengtu {
+	display: none;
+	position: absolute;
+	width: 330px;
+	top: 40px;
+	left: -2px;
+	padding: 15px;
+	border: 1px solid gray;
+	background-color: #fff;
+}
+
+.yanzhengtu .btn {
+	width: 30px;
+	height: 30px;
+	background: url(../images/login_icon_1010.gif) 0 -340px no-repeat;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	cursor: pointer;
+	display: block;
+}
+.yanzhengtu>span{
+	position: absolute;
+	display: block;
+	width:20px;
+	height: 20px;
+}
+/* 激活码 */
+.min-input {
+	font-size: 15px;
+	width: 154px;
+	height: 32px;
+	line-height: 32px;
+	color: #999;
+	outline: 0;
+	padding: 3px 3px 3px 11px;
+	margin-left: 10px;
+}
+
+.miantable>form> ul .threep {
+	margin-left: 165px;
+	height: 38px;
+}
+
+.miantable>form>.threep span:last-of-type {
+	display: inline-block;
+	width: 170px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin-left: 15px;
+	background-color: #e9e9e9;
+	cursor: pointer;
+}
+
+/* 邀请人 */
+.fourp {
+	margin-left: 165px;
+	height: 38px;
+}
+
+/* 注册 */
+.fivep {
+	margin-left: 225px;
+}
+
+.fivep>input {
+	text-align: center;
+	width: 360px;
+	height: 60px;
+	line-height: 50px;
+	color: #fff;
+	font-size: 24px;
+	background-color: #c6cacb;
+	border: none;
+}
+
+/* 我同意 */
+.checkdiv {
+	margin-top: 30px;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.checkdiv input {
+	width: 15px;
+	height: 15px;
+	line-height: 15px;
+	vertical-align: middle;
+}
+
+.checkdiv a {
+	color: #32beff;
+}
+
+.mianbottom {
+	text-align: center;
+	font-size: 22px;
+	margin-top: 40px;
+	padding-bottom: 60px;
+}
+
+/* 底部 */
+footer {
+	background-color: #000000;
+}
+
+.footbcg {
+	width: 1200px;
+	margin: 0 auto;
+	height: 60px;
+	line-height: 60px;
+	color: lightgray;
+	font-size: 15px;
+}
+
+.footbcg a {
+	color: lightgray;
+}
+
+.footbcg a:hover {
+	color: #32beff;
+}
+
+/* 隐藏部分 */
+.tishi {
+	display: none;
+}
+
+.youxiangp {
+	display: none;
+}
+
+.spantext {
+	position: absolute;
+	width: 360px;
+	top: 30px;
+	right: -85px;
+	display:block;
+	background-color: #f6f6f6;
+	z-index: 100;
+	color: dimgray;
+	line-height: 30px;
+	padding-left: 20px;
+	border: 1px solid #d4d4d4;
+	display: none;
+}
+.onep-sanjiao{
+	position: absolute;
+	    top: -20px;
+	    right: 105px;
+	    display: block;
+	    height: 0;
+	    width: 0;
+	    font-size: 0;
+	    line-height: 0;
+	    border-color: transparent transparent #d4d4d4 transparent;
+	    border-style: dashed dashed solid dashed;
+	    border-width: 10px;
+		z-index: 101;
+}
+.onep-sanjiao>i{
+	    position: absolute;
+	    top: -9px;
+	    left: -10px;
+	     display: block; 
+	    height: 0;
+	    width: 0;
+	    font-size: 0;
+	    line-height: 0;
+	    border-color: transparent transparent #f6f6f6 transparent;
+	    border-style: dashed dashed solid dashed;
+	    border-width: 10px;
+}
+.spancolor {
+	color: #0000FF;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录成功</title>
+</head>
+
+<body>
+    <h1>登录成功！<span>3</span>秒后跳转至首页！！！</h1>
+</body>
+<script>
+    function tiaoZhuan() {
+        var spanDom = document.querySelector("span");
+        var num = spanDom.innerHTML;
+        var timer = setInterval(function() {
+            num--;
+            spanDom.innerHTML = num;
+            if (num == 0) {
+                clearTimeout(timer);
+                location.href = "index.html"; //跳转首页
+
+            }
+        }, 1000);
+    }
+    tiaoZhuan();
+</script>
+
+</html>

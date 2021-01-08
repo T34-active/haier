@@ -1,0 +1,1422 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+
+/* 图库样式 */
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+
+/* 公共样式 */
+
+.wrap {
+    box-sizing: border-box;
+    margin: 0 auto;
+    min-width: 1360px;
+    width: 1360px;
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    zoom: 1;
+}
+
+i {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-family: "微软雅黑";
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+/* 头部 */
+
+.header {
+    height: 70px;
+}
+
+.header-left {
+    border-bottom: 1px solid #666;
+    overflow: hidden;
+}
+
+.header-left>li {
+    float: left;
+    list-style: none;
+    line-height: 70px;
+    margin-right: 50px;
+}
+
+.header-left>li>a:hover {
+    color: #0c5ca8;
+}
+
+.header-left .logo {
+    width: 180px;
+    height: 70px;
+}
+
+.header-left .logo>a:before {
+    content: "";
+    display: inline-block;
+    width: 90%;
+    height: 100%;
+    margin-top: 20px;
+    background: url(../images/haier2020_logo.png) no-repeat 0px -18px;
+    background-size: 65%;
+}
+
+.header-right {
+    overflow: hidden;
+}
+
+.header-right>li {
+    float: left;
+    list-style: none;
+    line-height: 70px;
+    margin-right: 5px;
+}
+
+.header-right .search {
+    height: 35px;
+    padding-left: 7px;
+    outline: none;
+    border: none;
+}
+
+.header-right .search-form {
+    position: relative;
+}
+
+.header-right .icon-search {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 16px;
+    height: 30px;
+    width: 30px;
+    background: url(../images/icon-search.png) no-repeat;
+    background-size: 77%;
+}
+
+.header-right .cart {
+    width: 30px;
+    height: 30px;
+}
+
+.header-right .cart>a:before {
+    content: "";
+    display: inline-block;
+    background: url(../images/icon-cart.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    background-size: 100%;
+    margin-left: 5px;
+}
+
+.header-right .myid {
+    width: 30px;
+    height: 30px;
+}
+
+
+/*==============whj--修改  ↓↓↓ ============*/
+
+.header-right .mine {
+    display: inline-block;
+    background: url(../images/icon-myid.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    background-size: 100%;
+    margin-left: 25px;
+}
+
+.mine_out {
+    position: absolute;
+    top: 70px;
+    right: 240px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background-color: #fff;
+    z-index: 1;
+    display: none;
+}
+
+.mine_out p {
+    line-height: 50px;
+    text-indent: 10px;
+}
+
+.mine_out p:hover {
+    background-color: #ccc;
+}
+
+.mine_out p:hover a {
+    color: #fff;
+}
+
+.mine_out a {
+    display: inline-block;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*==========whj--修改 ↑↑↑=============*/
+
+
+/* .header-right .mine:before {
+    注释，使用上面修改的。
+    content: "";
+    display: inline-block;
+    background: url(../images/icon-myid.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    background-size: 100%;
+    margin-left: 25px;
+} */
+
+.header-right .mine-hover:before {
+    content: "";
+    display: none;
+    background: url(../images/icon-myid-hover.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    background-size: 100%;
+    margin-left: 25px;
+}
+
+
+/* end头部标签 */
+
+
+/* 全场景智慧生活 */
+
+.ww {
+    width: 1230px;
+    margin: 0 auto;
+}
+
+
+/* 日常轮播 */
+
+.scene_content h2 {
+    line-height: 130px;
+    font-size: 40px;
+}
+
+.scene_content .scene_public {
+    width: 100%;
+    height: 510px;
+    transition: all 1s ease-in-out;
+}
+
+.scene_public>div {
+    float: left;
+}
+
+.scene_public .video {
+    width: 820px;
+    height: 100%;
+}
+
+.scene_public .video p {
+    float: right;
+    margin-right: 10px;
+    margin-top: 18px;
+    width: 198px;
+    height: 52px;
+    border: 1px solid rgb(44, 182, 255);
+    color: rgb(102, 102, 102);
+    line-height: 52px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.scene_public .video p i {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url(../images/sence/video_icon_img.webp) no-repeat 0 0;
+    position: relative;
+    top: 6px;
+    left: 4px;
+}
+
+.scene_public .video p:hover {
+    background-color: rgb(44, 182, 255);
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+.scene_public .video p:hover i {
+    background-image: url(../images/sence/video_icon_img_hover.webp);
+}
+
+.scene_public .scene_public_content {
+    box-sizing: border-box;
+    width: 366px;
+    height: 510px;
+    position: relative;
+    padding: 50px 50px 0;
+    margin: 0 20px;
+    box-shadow: 0 0 40px 16px rgb(243, 243, 243);
+}
+
+.scene_public_content .time {
+    float: right;
+    font-size: 32px;
+    color: rgb(102, 102, 102);
+    position: relative;
+    top: 18px;
+    left: 0px;
+}
+
+.scene_public_content .weather {
+    font-size: 24px;
+    color: rgb(102, 102, 102);
+    text-indent: 10px;
+}
+
+.scene_public_content .shop {
+    width: 260px;
+    height: 260px;
+    margin-top: 44px;
+}
+
+.scene_public_content .shop li {
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+    height: 50%;
+    background-color: rgb(246, 246, 246);
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    font-size: 14px;
+    padding-top: 22px;
+    position: relative;
+}
+
+.scene_public_content .shop img {
+    width: 74px;
+    height: 74px;
+    margin-left: 26px;
+}
+
+.scene_public_content .shop p {
+    text-align: center;
+}
+
+.scene_public_content .shop a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.scene_public_content .left {
+    position: absolute;
+    left: -44px;
+    top: 114px;
+    cursor: pointer;
+}
+
+.scene_public_content .right {
+    position: absolute;
+    right: -44px;
+    top: 114px;
+    cursor: pointer;
+}
+
+
+/* end全场景智慧生活 */
+
+
+/* 七大全屋解决方案 by:王华杰*/
+
+.ww {
+    box-sizing: border-box;
+    width: 1230px;
+    margin: 0 auto;
+}
+
+.seven_solve {
+    position: relative;
+    height: 750px;
+}
+
+.smart-bottom {
+    position: absolute;
+    bottom: 0px;
+    z-index: 201;
+}
+
+
+/* 七全屋 */
+
+.seven_solve .wrap-color {
+    background-color: rgb(247, 247, 247);
+}
+
+
+/* 七全屋内容 */
+
+.seven_content>div {
+    float: left;
+}
+
+.seven_content h2 {
+    line-height: 130px;
+    font-size: 40px;
+}
+
+.seven_content .content_public {
+    width: 12.5%;
+    height: 594px;
+    transition: Width .3s ease-out;
+}
+
+.seven_content .cate {
+    width: 50%;
+}
+
+
+/* 横显示 */
+
+.content_public .across_public {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-top: 40px;
+    padding-left: 16px;
+    box-shadow: 0 10px 10px#ccc;
+}
+
+.content_public .across_public h3 {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    font-size: 32px;
+    font-weight: normal;
+    color: rgb(102, 102, 102);
+}
+
+.content_public .across_public h3 p {
+    font-size: 18px;
+}
+
+.content_public .across_public h3 img {
+    float: left;
+    margin-right: 20px;
+}
+
+.content_public .across_public a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.content_public .across_public a img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 竖显示 */
+
+.content_public .erect_public {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background: url(../images/seven_solve/cate_small_img.png) no-repeat 0 30px;
+    position: relative;
+    padding-top: 40px;
+    padding-left: 36px;
+    box-shadow: 0 10px 10px#ccc;
+}
+
+.wash .erect_public {
+    background-image: url(../images/seven_solve/wash_small_img.png);
+}
+
+.water .erect_public {
+    background-image: url(../images/seven_solve/water_small_img.png);
+}
+
+.air .erect_public {
+    background-image: url(../images/seven_solve/air_small_img.png);
+}
+
+.capacity .erect_public {
+    background-image: url(../images/seven_solve/capacity_small_img.png);
+}
+
+.content_public .erect_public p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+    color: rgb(102, 102, 102);
+    margin-top: 10px;
+}
+
+
+/* end七大全屋解决方案 */
+
+
+/* 产品推荐 by:陈思腾*/
+
+.home-product {
+    min-height: 760px;
+    background-size: 100% 100%;
+    background-image: url(../images/smartfamily2018_bg4_new.webp);
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+}
+
+.home-product>h1 {
+    padding: 30px 60px;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.home-product>h1>a {
+    font-size: 20px;
+    font-weight: 400;
+    width: 208px;
+    height: 62px;
+    text-align: center;
+    line-height: 62px;
+    display: inline-block;
+    border: 1px solid rgb(102 102 102);
+    cursor: pointer;
+    float: right;
+    transition: all .3s ease-in-out;
+}
+
+.home-product>h1>a:hover {
+    background-color: rgb(102 102 102);
+    color: #fff;
+    outline: none;
+}
+
+.home-product-content {
+    /* 空的 */
+}
+
+.home-left {
+    box-sizing: border-box;
+    margin-left: 5%;
+    width: 45%;
+}
+
+.home-right {
+    box-sizing: border-box;
+    margin-right: 5%;
+    width: 45%;
+}
+
+.one {
+    height: 510px;
+}
+
+.two {
+    height: 255px;
+    background-color: rgb(245 245 245)!important;
+}
+
+.three {
+    height: 192px;
+    background-color: #f8f7f6 !important;
+}
+
+.four {
+    height: 380px;
+    background-color: #fbfafa !important;
+}
+
+.con-ev {
+    margin-right: 4px;
+    cursor: pointer;
+    width: 49%;
+    display: inline-block;
+    background-color: #fff;
+}
+
+.con-ev .con-ev-box1 {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 305px;
+    text-align: center;
+    padding: 0 5%;
+    transition: all .3s linear;
+}
+
+.con-ev .con-ev-box1:hover {
+    box-shadow: 0 10px 20px #ddd;
+    transform: translate3d(0, -5px, 0);
+}
+
+.con-ev .con-ev-box1 .op-img {
+    display: inline-block;
+    max-width: 240px;
+    max-height: 240px;
+    margin: 100px 0px;
+}
+
+.con-ev .con-ev-box1 .op-img img {
+    width: 100%;
+}
+
+.con-ev .con-ev-box1>span {
+    font-size: 18px;
+    display: block;
+    text-align: left;
+    margin-left: 5px;
+    font-weight: 100;
+}
+
+.con-ev .con-ev-box1>p {
+    margin-left: 5px;
+    font-size: 12px;
+    color: rgb(102 102 102);
+    display: block;
+    text-align: left;
+    margin-top: 5px;
+    line-height: 14px;
+    font-weight: 100;
+}
+
+.con-ev .con-ev-box1 .op-img2 {
+    max-width: 96px;
+    max-height: 96px;
+    width: 40%;
+    margin: 0;
+    margin-top: 78px;
+}
+
+.con-ev .op-img2 img {
+    width: 100%;
+}
+
+.con-ev .op-img2-text {
+    display: inline-block;
+    width: 60%;
+    margin-top: 100px;
+}
+
+.con-ev .op-img2-text>span {
+    font-size: 18px;
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+    font-weight: 100;
+}
+
+.con-ev .op-img2-text>p {
+    margin-left: 10px;
+    font-size: 12px;
+    color: rgb(102 102 102);
+    display: block;
+    text-align: left;
+    margin-top: 5px;
+    line-height: 14px;
+    font-weight: 100;
+}
+
+.con-ev .con-ev-box1 .op-img3 {
+    max-width: 96px;
+    max-height: 96px;
+    width: 40%;
+    margin: 0;
+    margin-top: 55px;
+    margin-left: 10px;
+}
+
+.con-ev .op-img3 img {
+    width: 100%;
+}
+
+.con-ev .op-img3-text {
+    display: inline-block;
+    width: 60%;
+    margin-top: 70px;
+}
+
+.con-ev .op-img3-text>span {
+    font-size: 18px;
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+    font-weight: 100;
+}
+
+.con-ev .op-img3-text>p {
+    margin-left: 10px;
+    font-size: 12px;
+    color: rgb(102 102 102);
+    display: block;
+    text-align: left;
+    margin-top: 5px;
+    line-height: 14px;
+    font-weight: 100;
+}
+
+.con-ev .op-img4 {
+    display: inline-block;
+    margin: 27px 0;
+    max-width: 240px;
+    max-height: 240px;
+}
+
+.con-ev .op-img4 img {
+    width: 100%;
+}
+
+
+/* end产品推荐 */
+
+
+/* 产品热评 */
+
+.product {
+    margin-bottom: 20px;
+    width: 1300px;
+    height: 700px;
+}
+
+.product>h1 {
+    padding: 30px 60px;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.product>h1>a {
+    font-size: 20px;
+    font-weight: 400;
+    width: 208px;
+    height: 62px;
+    text-align: center;
+    line-height: 62px;
+    display: inline-block;
+    border: 1px solid rgb(102 102 102);
+    cursor: pointer;
+    float: right;
+    transition: all .3s ease-in-out;
+}
+
+.product>h1>a:hover {
+    background-color: rgb(102 102 102);
+    color: #fff;
+    outline: none;
+}
+
+.product_comment {
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.product_comment>.product_one {
+    transition: all .4s ease-in-out;
+    width: 380px;
+    height: 470px;
+}
+
+.product_comment>.product_one>a>img {
+    width: 100%;
+}
+
+.product_comment>.product_one>.text {
+    font-size: 22px;
+    color: #333;
+    display: block;
+    padding: 20px 10px 10px 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.product>.product_comment>.product_one>span {
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+}
+
+.product_one:hover {
+    transition: all .4s ease-in-out;
+    box-shadow: 0 20px 50px #d0d0d0;
+    transform: translatey(-10px);
+}
+
+.user {
+    padding: 40px 8px 20px 8px;
+}
+
+
+/*——————————————————————————————————————*/
+
+.user .headbox {
+    position: relative;
+    height: 68px;
+    display: flex;
+    align-items: center;
+}
+
+.user .headbox-img {
+    width: 68px;
+    height: 68px;
+    border-radius: 32px;
+}
+
+.user .textname {
+    margin-left: 5px;
+    flex-grow: 1;
+}
+
+.user>.headbox>.tool {
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.user>.headbox>.tool>img {
+    margin-right: 5px;
+}
+
+
+/*——————————————————————————————————————*/
+
+
+/* end产品热评 */
+
+
+/* 生活资讯 */
+
+.live {
+    margin-bottom: 20px;
+}
+
+.live>h1 {
+    padding: 30px 60px;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.live>h1>a {
+    font-size: 20px;
+    font-weight: 400;
+    width: 208px;
+    height: 62px;
+    text-align: center;
+    line-height: 62px;
+    display: inline-block;
+    border: 1px solid rgb(102 102 102);
+    cursor: pointer;
+    float: right;
+    transition: all .3s ease-in-out;
+}
+
+.live>h1>a:hover {
+    background-color: rgb(102 102 102);
+    color: #fff;
+    outline: none;
+}
+
+.live .box {
+    width: 100%;
+}
+
+.box-content {
+    width: 48%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 2%;
+    float: left;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.box-content:hover {
+    transition: all .4s ease-in-out;
+    box-shadow: 0 20px 50px #d0d0d0;
+    transform: translatey(-10px);
+}
+
+
+/* 左边图片 */
+
+.box-content .ob {
+    width: 44%;
+}
+
+.box-content .ob img {
+    width: 100%;
+}
+
+
+/* 右边文字 */
+
+.box-content .right {
+    width: 46%;
+    height: 116px;
+    display: inline-block;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.box-content .right .tit {
+    display: block;
+    color: #333;
+    margin-top: 10px;
+    height: 70px;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.box-content .right p span {
+    color: #999;
+    font-size: 14px;
+    margin-right: 4px;
+    font-weight: 100;
+}
+
+.box-content .right p i {
+    color: #999;
+    font-size: 14px;
+    margin-right: 4px;
+    font-weight: 100;
+}
+
+
+/* end生活资讯 */
+
+
+/* end生活资讯 */
+
+
+/* 五大生活空间 */
+
+.five_life .wrap-box>div {
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+    height: 764px;
+}
+
+.five_life .five_content {
+    width: 65%;
+    overflow: hidden;
+    position: relative;
+}
+
+.five_content h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 100px;
+    margin-left: 50px;
+    font-size: 40px;
+}
+
+.five_content .lunbo {
+    width: 500%;
+    height: 100%;
+}
+
+.five_content .lunbo li {
+    list-style: none;
+    float: left;
+    width: 20%;
+    height: 100%;
+    background: url(../images/five_life/five_one0_img.webp) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.five_content .lunbo li.living {
+    background-image: url(../images/five_life/five_one0_img.webp);
+}
+
+.five_content .lunbo li.bedroom {
+    background-image: url(../images/five_life/five_two0_img.webp);
+}
+
+.five_content .lunbo li.kitchen {
+    background-image: url(../images/five_life/five_three0_img.webp);
+}
+
+.five_content .lunbo li.bathroom {
+    background-image: url(../images/five_life/five_four0_img.webp);
+}
+
+.five_content .lunbo li.veranda {
+    background-image: url(../images/five_life/five_five0_img.webp);
+}
+
+.five_content .lunbo .opacity {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    background-color: rgb(173, 170, 162);
+    opacity: .5;
+}
+
+.five_content .lunbo .details {
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    color: white;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.five_content .lunbo .details h3 {
+    position: relative;
+    z-index: 200;
+    font-size: 24px;
+}
+
+.five_content .lunbo .details .explain {
+    width: 500px;
+    margin-top: 10px;
+}
+
+.five_content .lunbo .details .look {
+    float: right;
+    width: 170px;
+    height: 60px;
+    border: 1px solid white;
+    color: white;
+    line-height: 60px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 50px;
+    position: relative;
+}
+
+.five_content .lunbo .details .look a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.five_content .lunbo .details .look:hover {
+    background-color: white;
+    border-color: white;
+    color: rgb(102, 102, 102);
+}
+
+.five_content .lunbo .details a img {
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+}
+
+
+/* 轮播顺序 */
+
+.five_content .bar {
+    width: 290px;
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.five_content .bar li {
+    list-style: none;
+    float: left;
+    width: 50px;
+    height: 4px;
+    background-color: rgb(198, 202, 203);
+    margin-right: 8px;
+}
+
+
+/* 线下体验 */
+
+.five_life .line_xia {
+    width: 35%;
+    background: url(../images/five_life/line_xia0.webp) no-repeat 0 0;
+    padding-top: 20px;
+}
+
+.line_xia .line_content {
+    box-sizing: border-box;
+    width: 80%;
+    height: 95%;
+    border: 1px solid white;
+    padding: 200px 20px 0;
+    margin-left: 20px;
+}
+
+.line_xia .line_content:hover {
+    box-shadow: 0 20px 50px #d0d0d0;
+    transition: all .8s;
+}
+
+.line_xia .line_content p {
+    width: 220px;
+    height: 60px;
+    border: 1px solid white;
+    line-height: 60px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    margin: 100px auto 0;
+}
+
+.line_xia .line_content p a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.line_xia .line_content p i {
+    display: inline-block;
+    width: 28px;
+    height: 32px;
+    background: url(../images/five_life/line_xia2_img.webp) no-repeat 0 0;
+    margin-right: 5px;
+    position: relative;
+    top: 10px;
+}
+
+.line_xia .line_content p:hover {
+    background-color: white;
+    color: rgb(102, 102, 102);
+}
+
+.line_xia .line_content p:hover i {
+    background-image: url(../images/five_life/line_xia2_img_hover.webp);
+}
+
+
+/* end五大生活空间 */
+
+
+/* 了解智家 */
+
+.acquaintance {
+    height: 370px;
+}
+
+.acquaintance>h1 {
+    padding: 30px 60px;
+    font-size: 38px;
+}
+
+.acquaintance>h1>a {
+    font-size: 20px;
+    font-weight: 400;
+    width: 208px;
+    height: 62px;
+    text-align: center;
+    line-height: 62px;
+    display: inline-block;
+    border: 1px solid rgb(102 102 102);
+    cursor: pointer;
+    float: right;
+    transition: all .3s ease-in-out;
+}
+
+.acquaintance>h1>a:hover {
+    background-color: rgb(102 102 102);
+    color: #fff;
+    outline: none;
+}
+
+
+/* 了解智家4个图片 */
+
+.content {
+    margin-top: 20px;
+    background-color: #f7f7f7;
+}
+
+.content-pic {
+    cursor: pointer;
+    height: 300px;
+    float: left;
+}
+
+.content-box {
+    box-sizing: border-box;
+    padding: 12px;
+    margin: 0px 7px;
+    background-color: #ffffff;
+    height: 230px;
+    box-shadow: 0 20px 50px #d0d0d0;
+    transition: box-shadow 0.5s;
+}
+
+.content-box :hover .again {
+    display: block;
+}
+
+.content-text>p {
+    font-size: 18px;
+    margin-top: 7px;
+    text-align: left;
+    display: inline-block;
+}
+
+.content-text>span {
+    color: #acacac;
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 10px;
+    float: right;
+}
+
+
+/* 了解“智家”立即播放按钮 */
+
+.content-img .again {
+    padding: 5px 15px;
+    text-align: center;
+    line-height: 52px;
+    margin: 20px auto;
+    color: rgb(102 102 102);
+    border: 1px #2cb6ff solid;
+    width: 100px;
+    height: 52px;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+    display: none;
+}
+
+.content-img .again:hover {
+    border: 1px solid #2cb6ff;
+    background-color: #2cb6ff;
+    color: #fff;
+}
+
+.content-img .again:hover i {
+    background: url(../images/smartfamily2018_buttonicon_h.webp) no-repeat 0px 3px;
+}
+
+.content-img .again>i {
+    content: "";
+    padding: 0px 11px;
+    background: url(../images/smartfamily2018_buttonicon.webp) no-repeat 0px 3px;
+}
+
+
+/* end了解智家 */
+
+
+/* 底部	 */
+
+.footer {
+    height: 450px;
+}
+
+.footer-up {
+    background-color: #f6f7f9;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.footer .famliy {
+    width: 16.6%;
+}
+
+.footer .famliy .list>li {
+    height: 30px;
+    list-style: none;
+}
+
+.footer .famliy .list>li:first-of-type {
+    margin-top: 15px;
+}
+
+.footer .famliy .list>li>a {
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.footer .famliy .list>li>a:hover {
+    text-decoration: underline;
+}
+
+.footer-down {
+    background-color: #f6f7f9;
+    border-top: 1px solid rgb(200 200 200);
+    overflow: hidden;
+}
+
+.footer-down-left {
+    margin-top: 10px;
+    margin-right: 70px;
+}
+
+.footer-down-left>a {
+    font-size: 12px;
+    color: rgb(68 68 68);
+    display: inline-block;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.footer-down-left>a:hover {
+    color: rgb(12 92 168);
+}
+
+.footer-down-left>i {
+    padding: 0 10px;
+    vertical-align: middle;
+}
+
+.footer-down-mid {
+    margin-top: 10px;
+    vertical-align: middle;
+}
+
+.footer-down-mid>span>a {
+    font-size: 12px;
+    color: rgb(68 68 68);
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 400;
+}
+
+.footer-down-mid>i {
+    padding: 0 10px;
+    vertical-align: middle;
+}
+
+.footer-down-mid>span {
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.footer-down-right {
+    margin-top: 10px;
+    vertical-align: middle;
+}
+
+.footer-down-right .gz {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.footer-down-right .web {
+    font-size: 12px;
+}
+
+.footer-down-right .web>a {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(12 92 168);
+}
+
+.footer-down-right .icon-wechat {
+    margin-left: 5px;
+    position: relative;
+}
+
+.footer-down-right .icon-wechat>a {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-down-right .first {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+.footer-down-right .second {
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+.wechat-img {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+
+/* 返回顶部 */
+
+.back-top {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    right: 5px;
+    bottom: 50px;
+    cursor: pointer;
+}
+
+.no-hover {
+    display: block;
+    transition: all .3s;
+}
+
+.hover-top {
+    display: none;
+    transition: all .3s;
+}
+
+
+/* end返回顶部 */
